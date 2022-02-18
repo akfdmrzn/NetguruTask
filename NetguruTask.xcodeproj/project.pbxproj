@@ -15,6 +15,13 @@
 		BF83343627BFA5F200783DA0 /* NetguruTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83343527BFA5F200783DA0 /* NetguruTaskTests.swift */; };
 		BF83344027BFA5F200783DA0 /* NetguruTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83343F27BFA5F200783DA0 /* NetguruTaskUITests.swift */; };
 		BF83344227BFA5F200783DA0 /* NetguruTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83344127BFA5F200783DA0 /* NetguruTaskUITestsLaunchTests.swift */; };
+		BF83344F27BFABFE00783DA0 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83344E27BFABFE00783DA0 /* PaymentViewController.swift */; };
+		BF83345427BFAD4C00783DA0 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83345327BFAD4C00783DA0 /* Payment.swift */; };
+		BF83345627BFAD9100783DA0 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83345527BFAD9100783DA0 /* PaymentView.swift */; };
+		BF83345827BFADA300783DA0 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83345727BFADA300783DA0 /* PaymentViewModel.swift */; };
+		BF83345C27BFB06400783DA0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83345B27BFB06400783DA0 /* ApiClient.swift */; };
+		BF83345E27BFB6FD00783DA0 /* EnumCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83345D27BFB6FD00783DA0 /* EnumCurrency.swift */; };
+		BF83346227BFB82B00783DA0 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF83346127BFB82B00783DA0 /* ExtensionUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		BF83343B27BFA5F200783DA0 /* NetguruTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetguruTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF83343F27BFA5F200783DA0 /* NetguruTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruTaskUITests.swift; sourceTree = "<group>"; };
 		BF83344127BFA5F200783DA0 /* NetguruTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF83344E27BFABFE00783DA0 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		BF83345327BFAD4C00783DA0 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		BF83345527BFAD9100783DA0 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		BF83345727BFADA300783DA0 /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		BF83345B27BFB06400783DA0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BF83345D27BFB6FD00783DA0 /* EnumCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCurrency.swift; sourceTree = "<group>"; };
+		BF83346127BFB82B00783DA0 /* ExtensionUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,13 @@
 		BF83341D27BFA5F000783DA0 /* NetguruTask */ = {
 			isa = PBXGroup;
 			children = (
+				BF83346027BFB81600783DA0 /* Extensions */,
+				BF83345F27BFB70200783DA0 /* Enums */,
+				BF83345A27BFB04B00783DA0 /* Network */,
+				BF83345927BFAF8A00783DA0 /* Controller */,
+				BF83345227BFAD3C00783DA0 /* Model */,
+				BF83345127BFAD3300783DA0 /* View */,
+				BF83345027BFAD2B00783DA0 /* ViewModel */,
 				BF83341E27BFA5F000783DA0 /* AppDelegate.swift */,
 				BF83342227BFA5F000783DA0 /* ViewController.swift */,
 				BF83342427BFA5F000783DA0 /* Main.storyboard */,
@@ -122,6 +143,62 @@
 				BF83344127BFA5F200783DA0 /* NetguruTaskUITestsLaunchTests.swift */,
 			);
 			path = NetguruTaskUITests;
+			sourceTree = "<group>";
+		};
+		BF83345027BFAD2B00783DA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF83345727BFADA300783DA0 /* PaymentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF83345127BFAD3300783DA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF83345527BFAD9100783DA0 /* PaymentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF83345227BFAD3C00783DA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF83345327BFAD4C00783DA0 /* Payment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF83345927BFAF8A00783DA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF83344E27BFABFE00783DA0 /* PaymentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF83345A27BFB04B00783DA0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF83345B27BFB06400783DA0 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BF83345F27BFB70200783DA0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BF83345D27BFB6FD00783DA0 /* EnumCurrency.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BF83346027BFB81600783DA0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF83346127BFB82B00783DA0 /* ExtensionUIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF83345C27BFB06400783DA0 /* ApiClient.swift in Sources */,
 				BF83342327BFA5F000783DA0 /* ViewController.swift in Sources */,
+				BF83345827BFADA300783DA0 /* PaymentViewModel.swift in Sources */,
+				BF83344F27BFABFE00783DA0 /* PaymentViewController.swift in Sources */,
+				BF83346227BFB82B00783DA0 /* ExtensionUIColor.swift in Sources */,
+				BF83345427BFAD4C00783DA0 /* Payment.swift in Sources */,
+				BF83345E27BFB6FD00783DA0 /* EnumCurrency.swift in Sources */,
+				BF83345627BFAD9100783DA0 /* PaymentView.swift in Sources */,
 				BF83341F27BFA5F000783DA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
